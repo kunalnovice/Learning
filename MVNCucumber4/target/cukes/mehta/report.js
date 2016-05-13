@@ -57,21 +57,21 @@ formatter.match({
   "location": "Register.user_is_on_Register_page()"
 });
 formatter.result({
-  "duration": 22825266151,
+  "duration": 23508645371,
   "status": "passed"
 });
 formatter.match({
   "location": "Register.user_submit_RP_form_as_unregistered_user()"
 });
 formatter.result({
-  "duration": 6366234993,
+  "duration": 7705058209,
   "status": "passed"
 });
 formatter.match({
   "location": "Account.an_user_account_is_created()"
 });
 formatter.result({
-  "duration": 161723070,
+  "duration": 346198197,
   "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.StepDefs.Account.an_user_account_is_created(Account.java:21)\r\n\tat ✽.Then an user account is created(Register.feature:12)\r\n",
   "status": "failed"
 });

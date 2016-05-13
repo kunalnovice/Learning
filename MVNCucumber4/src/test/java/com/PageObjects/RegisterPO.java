@@ -6,7 +6,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.common.RandomData;
+
 public class RegisterPO extends BasePO {
+RandomData rd = new RandomData();
+static String emailId;
+static String passwd;
 
 	public RegisterPO(WebDriver driver) {
 		super(driver);
@@ -47,11 +52,14 @@ public class RegisterPO extends BasePO {
 	}
 	
 	public AccountPO fillFormAndSubmit() {
-		setEmail("kunal1@kunal1.com");
+		emailId=rd.getEmail();
+		passwd=rd.getPassword();
+		
+		setEmail(emailId);
 		setRegister();
-		setConfirmEmail("kunal1@kunal1.com");
-		setPassword("kunal1");
-		setConfirmPassword("kunal1");
+		setConfirmEmail(emailId);
+		setPassword("passwd");
+		setConfirmPassword("passwd");
 		setMarketingOption();
 		submitForm();
 		return new AccountPO(driver);

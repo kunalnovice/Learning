@@ -13,7 +13,7 @@ public class AccountPO extends BasePO {
 	public boolean checkAccount() {
 	
 		
-		boolean bo= driver.findElement(By.xpath("//span[@class='user-name ng-binding']")).getText().contains("kunal1@kunal1.com");
+		boolean bo= driver.findElement(By.xpath("//span[@class='user-name ng-binding']")).getText().contains(RegisterPO.emailId);
 		System.out.println("value is :"+bo);
 		return bo;
 	}

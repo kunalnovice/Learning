@@ -32,7 +32,7 @@ public class Register extends AbstractPageStepDef {
 	public void user_is_on_Register_page()  {
 	    hp= new HomePO(driver);
 	    hp.navigateToHomePage();
-	    hp.navigatetoRegisterPage("Login / Register");
+	    hp.navigatetoRegisterPage();
 	}
 
 	@When("^User submit RP form as unregistered user$")

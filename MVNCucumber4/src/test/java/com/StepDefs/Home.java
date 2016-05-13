@@ -31,7 +31,7 @@ public class Home extends AbstractPageStepDef  {
 	public void user_Request_to_Register()  {
 		  System.out.println("User Request to Register");
 		//  driver.findElement(By.linkText("Login / Register")).click();
-		  homepo.navigatetoRegisterPage("Login / Register");
+		  homepo.navigatetoRegisterPage();
 		  System.out.println("User is on Register page");
 	   
 	}
