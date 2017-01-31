@@ -1,4 +1,4 @@
-Feature: Proof of concept that framework works
+Feature: Proof of concept that framework works-changed on github
 
   # Scenario: Below scenario verifies that Register Page is displayed
   #  Given User is on Home page
